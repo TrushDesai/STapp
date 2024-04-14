@@ -39,6 +39,4 @@ if st.button('Generate responses'):
         post_text = analyze_text(user_input)
         st.write(post_text)
 
-    with st.spinner('Generating Thumbnail...'):
-        thumbnail_url = generate_image(user_input)  # Consider adjusting the prompt for image generation if needed
-        st.image(thumbnail_url, caption='Generated Thumbnail')
+   
