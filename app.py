@@ -6,7 +6,7 @@ api_key = os.getenv("OPENAI_API_KEY")  # Used in production
 client = OpenAI(api_key=api_key)
 
 st.title('🎯 AI Google Review Response Assistant for restaurants 🍽️')
-st.markdown('I was made to help you craft 5 variations of SEO friendly google review responses')
+st.markdown('I was made to help you craft 5 variations of SEO friendly google review response')
 
 def analyze_text(text):
     if not api_key:
@@ -18,7 +18,7 @@ def analyze_text(text):
 
       # Instructions for the AI (adjust if needed)
     messages = [
-        {"role": "system", "content": "You are an assistant who helps craft SEO friendly google review responses and end with line to invite them again."},
+        {"role": "system", "content": "You are an assistant who helps craft SEO friendly google review responses and end with line to invite them again also start with thanking them for adding a review and finish with follow us on instagram and link."},
         {"role": "user", "content": f"Please help me generate 5 different review responses for :\n{text}"}
     ]
 
