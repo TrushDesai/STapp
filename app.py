@@ -47,7 +47,7 @@ def generate_image(text):
     return response.data[0].url
 
 # Cell 4: Streamlit UI 
-user_input = st.text_area("Enter a Google review:", "It was a amazing experiance, very yoummy food we will return again ")
+user_input = st.text_area("Enter a Google review:", "It was an amazing experience, very yummy food we will return again ")
 
 if st.button('Generate responses'):
     with st.spinner('Generating Text...'):
